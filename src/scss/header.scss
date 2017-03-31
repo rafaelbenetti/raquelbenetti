@@ -1,0 +1,39 @@
+.header {
+    background: #c2e1ef;
+    padding-bottom: 10px;
+    .header-box {
+        min-height: 400px;
+        max-width: 1000px;
+        margin: 0 auto;
+        .header-slider {
+            width: 90%;
+            max-width: 400px;
+        }
+        .box-title {
+            border-top: 3px solid $primary-color;
+            border-bottom: 3px solid $primary-color;
+        }
+    }
+    .slider-circle {
+        background: $second-color;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 20px 0 20px;
+        &.active {
+            background: $primary-color;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-slider {
+        float: left;
+    }
+    .header-content {
+        padding-top: 60px;
+        display: inline-block;
+        width: 45%;
+    }
+}

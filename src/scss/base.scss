@@ -1,0 +1,34 @@
+$primary-color: #f62459;
+$second-color: #525252;
+$text-color: $second-color;
+$second-text-color: $primary-color;
+
+* {
+    box-sizing: border-box;
+}
+
+body {   
+    color: $text-color;
+    font-family: 'Abel', cursive;
+    margin: 0;        
+    text-align: center;    
+}
+
+section {
+    padding: 20px;
+    width: 100%; 
+    margin: 0 auto;   
+}
+
+h2, h3 {
+    font-size: 400%;
+    margin: 5px;        
+}
+
+.font-amatic {
+    font-family: 'Amatic SC', cursive;
+}
+
+.hidden {
+    display: none;
+}

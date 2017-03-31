@@ -1,0 +1,39 @@
+{
+  "name": "raquelbenetti",
+  "version": "1.0.0",
+  "description": "Raquel Benetti Top Model Profile",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelbenetti/raquelbenetti.git"
+  },
+  "keywords": [
+    "raquelbenetti",
+    "benetti",
+    "topmodel"
+  ],
+  "author": "Rafael de Oliveira Benetti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelbenetti/raquelbenetti/issues"
+  },
+  "homepage": "https://github.com/rafaelbenetti/raquelbenetti#readme",
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-preset-es2015": "^6.24.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-chmod": "^2.0.0",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  }
+}
