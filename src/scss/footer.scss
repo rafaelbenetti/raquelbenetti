@@ -1,0 +1,31 @@
+.footer {
+    background: $footer-color;
+    .footer-email {
+        width: 60px;
+    }
+    .footer-text {
+        color: white;
+        transform: translateY(-25px);
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .footer-icon {
+        width: 80px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .footer-by {
+        color: white;
+        font-size: 70%;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer .footer-email {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}

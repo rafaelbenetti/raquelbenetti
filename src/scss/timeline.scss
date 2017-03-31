@@ -1,4 +1,59 @@
 .timeline {
-    height: 400px;
     background: $second-color;
+    max-width: 1000px;
+    .timeline-left {
+        padding-right: 10px;
+        .timeline-year {
+            margin-left: 10px;
+        }
+    }
+    .timeline-right {
+        padding-left: 10px;
+        .timeline-year {
+            margin-right: 10px;
+        }
+    }
+    .timeline-img {
+        width: 180px;
+        height: 180px;
+        margin: 10px;
+        border-radius: 15px;
+        background: $primary-color;
+    }
+    .timeline-name,
+    .timeline-text {
+        color: #fff;
+    }
+    .timeline-name {
+        font-size: 250%;
+    }
+    .timeline-text {
+        width: 90%;
+        display: inline-block;
+        text-align: justify;
+    }
+    .timeline-year {
+        color: $text-second-color;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .timeline-left,
+    .timeline-right {
+        width: 50%;
+        min-height: 220px;
+    }
+    .timeline-left {
+        display: block;
+        float: left;
+        text-align: right;
+        border-right: 5px solid $primary-color;
+    }
+    .timeline-right {
+        display: inline-block;
+        text-align: left;
+    }
+    .timeline .timeline-text {
+        width: 80%;
+    }
 }
