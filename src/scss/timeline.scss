@@ -1,6 +1,6 @@
 .timeline {
     background: $second-color;
-    max-width: 1000px;
+    max-width: $container-width;
     .timeline-left {
         padding-right: 10px;
         .timeline-year {
@@ -19,10 +19,14 @@
         margin: 10px;
         border-radius: 15px;
         background: $primary-color;
+        &:hover {
+            animation: grow-mini 0.5s ease-out forwards;
+            cursor: pointer;
+        }
     }
     .timeline-name,
     .timeline-text {
-        color: #fff;
+        color: $third-color;
     }
     .timeline-name {
         font-size: 250%;
@@ -34,20 +38,22 @@
     }
     .timeline-year {
         color: $text-second-color;
-    }
+    }    
 }
 
 @media screen and (min-width: 768px) {
     .timeline-left,
     .timeline-right {
         width: 50%;
-        min-height: 220px;
+        min-height: 270px;
     }
     .timeline-left {
         display: block;
         float: left;
-        text-align: right;
-        border-right: 5px solid $primary-color;
+        text-align: right;        
+    }
+    .timeline-border {
+        border-right: 5px solid $primary-color;            
     }
     .timeline-right {
         display: inline-block;
@@ -55,5 +61,15 @@
     }
     .timeline .timeline-text {
         width: 80%;
+    }
+    .timeline-circle {
+        $circle-radius: 25px;
+        width: $circle-radius;
+        height: $circle-radius;
+        background: $primary-color;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-15px, -10px);
     }
 }

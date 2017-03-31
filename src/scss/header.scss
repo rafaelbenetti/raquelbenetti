@@ -3,7 +3,7 @@
     padding-bottom: 10px;
     .header-box {
         min-height: 400px;
-        max-width: 1000px;
+        max-width: $container-width;
         margin: 0 auto;
         .header-slider {
             width: 90%;
@@ -23,6 +23,10 @@
         margin: 0 20px 0 20px;
         &.active {
             background: $primary-color;
+        }
+        &:hover {
+            cursor: pointer;
+            animation: grow 0.5s ease-out forwards;
         }
     }
 }

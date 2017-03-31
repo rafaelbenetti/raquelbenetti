@@ -4,19 +4,21 @@
         width: 60px;
     }
     .footer-text {
-        color: white;
+        color: $third-color;
         transform: translateY(-25px);
         display: inline-block;
         margin-left: 10px;
     }
     .footer-icon {
         width: 80px;
+        margin: 10px;
         &:hover {
             cursor: pointer;
+            animation: grow 0.5s ease-out forwards;
         }
     }
     .footer-by {
-        color: white;
+        color: $third-color;
         font-size: 70%;
         text-decoration: none;
     }
